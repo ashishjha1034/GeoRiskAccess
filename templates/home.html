@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDI Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/static/night2.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity value as needed */
+            z-index: 1;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgba(3, 3, 3, 0.8);
+            overflow: hidden;
+            display: flex;
+            justify-content: right;
+            padding: 10px 0;
+            position: relative;
+            z-index: 2; /* Ensures the navbar is above the overlay */
+        }
+
+        .navbar button {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 2; /* Ensures the buttons are above the overlay */
+        }
+
+        .navbar button:hover {
+            background-color: rgba(87, 87, 87, 0.8); /* Slightly different hover effect */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 60px); /* Adjusting for navbar height */
+            color: rgb(255, 255, 255); /* Text color for better readability against the background */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adding text shadow for better readability */
+            position: relative;
+            z-index: 2; /* Ensures the container content is above the overlay */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            z-index: 2; /* Ensures the heading is above the overlay */
+            font-family: "Jaro", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        h2 {
+             margin: 0;
+             font-size: 2em;
+             z-index: 2; /* Ensures the heading is above the overlay */
+             font-family:"Pacifico", cursive;
+             font-optical-sizing: auto;
+             font-weight: 500;
+             font-style: normal;
+
+        }
+
+
+
+        .explore-button:hover {
+            background-color: rgba(87, 87, 87, 0.8); /* Slightly different hover effect */
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 2; /* Ensures the buttons are above the overlay */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <button onclick="location.href='#'">About Us</button>
+        <button onclick="location.href='/real'">RealTime Temperature</button>
+        <button onclick="location.href='/risk'">Risk Factor</button>
+    </div>
+
+    <div class="container">
+        <h1>GeoRiskAccess: GIS-BASED PM2.5 POLLUTION AND RISK FACTOR ANALYSIS</h1>
+        <br></br>
+        <h2>"Calculate the Risk Factor of Your Favourite Place"</h2>
+        <br></br>
+        <button class="explore-button" onclick="location.href='/real'"><h2>Explore</h2></button>
+    </div>
+
+</body>
+</html>

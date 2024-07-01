@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Weather</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+    <header class="header">
+        <button class="home-btn">🏠</button>
+        <span class="title">Real Time Weather</span>
+        <select class="city-select">
+            <option value="Katraj">Katraj</option>
+        </select>
+    </header>
+    <div class="cards">
+        <div class="container card">
+            <div class="card-image" id="co-image" data-value="0">
+                <img src="/static/co22.jpeg" alt="CO2" class="image">
+                <div class="overlay">
+                    <div class="caption">CO2 (ppm)</div>
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container card">
+            <div class="card-image" id="so2-image" data-value="0">
+                <img src="/static/so22.jpg" alt="SO2" class="image">
+                <div class="overlay">
+                    <div class="caption">SO2 (ppm)</div>
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container card">
+            <div class="card-image" id="dust-image" data-value="0">
+                <img src="/static/particles.jpg" alt="Dust" class="image">
+                <div class="overlay">
+                    <div class="caption">Dust (ug/m3)</div>
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container card">
+            <div class="card-image" id="temp-image" data-value="0">
+                <img src="/static/temp.jpg" alt="Temperature" class="image">
+                <div class="overlay">
+                    <div class="caption">Temperature (DegC)</div>
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container card">
+            <div class="card-image" id="humidity-image" data-value="0">
+                <img src="/static/humidity.jpg" alt="Humidity" class="image">
+                <div class="overlay">
+                    <div class="caption">Humidity (%)</div>
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container card">
+            <div class="card-image" id="ntl-image" data-value="0">
+                <img src="/static/ntl.jpg" alt="NTL" class="image">
+                <div class="overlay">
+                    <div class="caption">NTL_Urban </div>
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="nextButton" class="next-btn">➡</button>
+    <script src="{{ url_for('static', filename='script1.js') }}"></script>
+</body>
+</html>

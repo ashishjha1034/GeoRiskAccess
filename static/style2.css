@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+}
+
+.home-icon {
+    font-size: 24px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.select-city {
+    display: flex;
+    align-items: center;
+}
+
+.select-city label {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+}
+
+.left-container, .right-container {
+    flex: 1;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.input-parameters, .risk-output {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.input-parameters .parameter {
+    margin-bottom: 10px;
+}
+
+#calculate-btn {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    margin-top: 39px;
+    margin-left: 275px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.risk-factor, .risk-classification {
+    margin-bottom: 20px;
+    background-color : #333;
+    text-align : center;
+    padding : 13px;
+}
+
+.risk-factor {
+    border-radius: 0%;
+}
+
+.map-container {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}
+
+.risk-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-paragraph {
+    background-color: #444;
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+}

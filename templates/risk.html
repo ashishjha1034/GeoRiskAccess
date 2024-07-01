@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Factor & Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="home-icon">🏠</div>
+        <div class="title">Risk Factor & Classification</div>
+        <div class="select-city">
+            <label for="city">Select City</label>
+            <select id="city">
+                <option value="katraj">Katraj</option>
+                <option value="katraj">Katraj</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-container">
+            <div class="input-parameters">
+                <div class="parameter">1. EPI : <span id="epi-value"></span></div>
+                <div class="parameter">2. UDI : <span id="udi-value"></span></div>
+                <div class="parameter">3. LUV : <span id="luv-value"></span></div>
+                <div class="parameter">4. CRI : <span id="cri-value"></span></div>
+                <button id="calculate-btn">Calculate</button>
+            </div>
+            <div class="risk-output">
+                <div class="risk-factor">
+                    <div class="factor-title">Risk Factor :</div>
+                    <div class="factor-value" id="risk-factor-value"></div>
+                </div>
+                <div class="risk-classification">
+                    <div class="classification-title">Risk Classification :</div>
+                    <div class="classification-value" id="risk-classification-value"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30278.96116798833!2d73.84208027467749!3d18.444204100076504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac101655f87%3A0xcc5b0a20d60c9ac8!2sKatraj%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1716910521416!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- New div to display the paragraph -->
+    <div id="katraj-info" class="info-paragraph">
+        Katraj, nestled on the outskirts of Pune, is a burgeoning hub with a blend of urban amenities and suburban charm. Its proximity to the IT and manufacturing sectors makes it an attractive residential destination.
+        While it offers affordable housing options, traffic congestion and limited public transportation can be drawbacks. The availability of essential services, educational institutions, and healthcare facilities makes it a relatively livable area. However, the lack of recreational spaces and environmental concerns require attention to enhance its livability in the long run.
+    </div>
+
+    <!-- Video element below the paragraph -->
+    <!-- Centered video element below the paragraph -->
+<div class="video-container" style="text-align: center; margin-top: 20px;">
+    <video width="600" controls>
+        <source src="{{ url_for('static', filename='video.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+    <script src="{{ url_for('static', filename='script2.js') }}"></script>
+</body>
+</html>
