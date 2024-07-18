@@ -15,7 +15,7 @@ def home():
 
 
 # Read the dataset
-df = pd.read_csv('RISKK.csv')
+df = pd.read_csv('City_Risktrain.csv')
 
 # Preprocess the data
 scaler = MinMaxScaler()
@@ -117,7 +117,7 @@ def calculate_indices():
     # Load the CSV files
     ntl = pd.read_csv('NTL_Katraj (1).csv')
     ndvi = pd.read_csv('ndvi_katraj_time.csv')
-    realtime = pd.read_csv('practisef.csv')
+    realtime = pd.read_csv('RealTime.csv')
 
     # Calculate averages for environmental components
     b_co_avg = realtime['CO2(PPM)'].max()
@@ -156,7 +156,7 @@ def calculate_indices():
     })
 
     # Save the new dataset
-    main_indices.to_csv('main_indices.csv', index=False)
+    main_indices.to_csv('4_Parameters.csv', index=False)
 
     response = {
         'b_co_avg': b_co_avg,
@@ -171,7 +171,7 @@ def calculate_indices():
 
 @app.route('/calculate_risk', methods=['POST'])
 def calculate_risk():
-    data = pd.read_csv("main_indices.csv")
+    data = pd.read_csv("4_Parameters.csv")
     epi = data['EPI'][0]
     udi = data['UDI'][0]
     luv = data['LUV'][0]
