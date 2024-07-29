@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware - Real Time Weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .home-btn {
+            background-color: white;
+            border: none;
+            color: #4CAF50;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .hardware-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .hardware-list {
+            background-color: #f9f9f9;
+            border-left: 5px solid #4CAF50;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .hardware-list li {
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #000; /* Set the color to black */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="home-btn" onclick="window.location.href='/'">🏠</button>
+        <h1>Hardware Components</h1>
+    </header>
+
+    <main>
+        <img src="static/img.png" alt="Real Time Weather Hardware Setup" class="hardware-image">
+
+        <h2>Our Sensor Array</h2>
+        <p>Our Real Time Weather system utilizes a sophisticated array of sensors and components to provide accurate and comprehensive environmental data. Here's a breakdown of the key hardware elements:</p>
+
+        <ul class="hardware-list">
+            <li><strong>DHT Sensor:</strong> Measures temperature and humidity with high precision.</li>
+            <li><strong>RTC Module:</strong> Records real-time data with an accurate timestamp, ensuring our measurements are properly logged and organized.</li>
+            <li><strong>MQ135 Sensors:</strong> Monitor various gases including CO, NO2, and SO2, providing crucial air quality information.</li>
+            <li><strong>Sharp Optical Dust Sensor (GP2Y1014AU0F):</strong> Detects fine particulate matter (PM2.5), a key indicator of air pollution levels.</li>
+            <li><strong>Microcontroller:</strong> We utilize a powerful microcontroller (such as Arduino or Raspberry Pi) to interface with all sensor modules, process the data, and log it efficiently.</li>
+        </ul>
+
+        <h2>System Integration</h2>
+        <p>Our team has carefully integrated these components to create a robust and reliable environmental monitoring system. The microcontroller serves as the brain of the operation, coordinating data collection from all sensors and ensuring accurate, time-stamped readings.</p>
+
+        <p>This hardware setup allows us to provide you with comprehensive, real-time environmental data, helping you stay informed about the air quality and weather conditions in your area.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GioRiskAccess. All rights reserved.</p>
+    </footer>
+</body>
+</html>
