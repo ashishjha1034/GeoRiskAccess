@@ -37,6 +37,9 @@ GeoRiskAccess analyzes several factors to assess environmental conditions and ri
 - Nighttime Lights (NTL) for economic activity
 - Normalized Difference Vegetation Index (NDVI) for vegetation cover
 
+  #Clone and run requirement.txt
+  pip install -r requirement.txt
+
 ## Platform Functionality
 
 Users can:
