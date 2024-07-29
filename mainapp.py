@@ -112,9 +112,13 @@ def predict_risk_classification(epi, udi, luv, cri):
 def real_time_temperaturer():
     return render_template('realtempereature.html')
 
-@app.route('/a')
+@app.route('/aboutus')
 def about_pager():
     return render_template('a.html')
+
+@app.route('/hardware')
+def hardware_pager():
+    return render_template('hardware.html')
 
 
 @app.route('/calculate_indices', methods=['GET'])
