@@ -1,64 +1,86 @@
-# GIS-RISK-FACTOR (GeoRiskAccess)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>GeoRiskAccess: GIS-Based Urban Environmental Risk Analysis</h1>
 
-GeoRiskAccess is a comprehensive project that leverages Geographic Information Systems (GIS) to analyze pollution and risk factors in urban environments, with a focus on Pune, India, particularly the Katraj area.
+  <p>
+        <img src="https://img.shields.io/github/contributors/ashishjha1034/GeoRiskAccess.svg?style=for-the-badge" alt="Contributors">
+        <img src="https://img.shields.io/github/forks/ashishjha1034/GeoRiskAccess.svg?style=for-the-badge" alt="Forks">
+    </p>
 
-## Project Overview
+  <h2>About The Project</h2>
 
-GeoRiskAccess integrates real-time sensor data from various environmental monitoring devices to provide insights into urban environmental conditions and associated risks. The project aims to create a web-based platform for informed decision-making in urban planning, disaster management, and public health interventions.
+  <p>GeoRiskAccess is a comprehensive project that leverages Geographic Information Systems (GIS) to analyze pollution and risk factors in urban environments, with a focus on Pune, India, particularly the Katraj area.</p>
 
-## Key Features
+  <h2>Project Overview</h2>
 
-- Real-time data collection from multiple sensor types
-- GIS-based analysis of environmental and urban factors
-- Web-based platform for data visualization and risk assessment
-- Focus on Pune, India, with emphasis on the Katraj area
+  <p>GeoRiskAccess integrates real-time sensor data from various environmental monitoring devices to provide insights into urban environmental conditions and associated risks. The project aims to create a web-based platform for informed decision-making in urban planning, disaster management, and public health interventions.</p>
 
-## Data Sources
+  <h2>Key Features</h2>
+    <ul>
+        <li>Real-time data collection from multiple sensor types</li>
+        <li>GIS-based analysis of environmental and urban factors</li>
+        <li>Web-based platform for data visualization and risk assessment</li>
+        <li>Focus on Pune, India, with emphasis on the Katraj area</li>
+    </ul>
 
-The project incorporates data from various sources, including:
+  <h2>Data Sources</h2>
+    <p>The project incorporates data from various sources, including:</p>
+    <ul>
+        <li>DHT-11 sensors (temperature and humidity)</li>
+        <li>MQ-135 sensors (air quality)</li>
+        <li>RTC modules (real-time clock)</li>
+        <li>SD card modules (data storage)</li>
+        <li>PM2.5 GP2Y1010AU0F optical dust sensor modules</li>
+    </ul>
 
-- DHT-11 sensors (temperature and humidity)
-- MQ-135 sensors (air quality)
-- RTC modules (real-time clock)
-- SD card modules (data storage)
-- PM2.5 GP2Y1010AU0F optical dust sensor modules
+  <h2>Analyzed Factors</h2>
+    <p>GeoRiskAccess analyzes several factors to assess environmental conditions and risks:</p>
+    <ul>
+        <li>Population density</li>
+        <li>Locations of fire stations, police stations, and parks</li>
+        <li>Air quality (PM2.5 and other pollutants)</li>
+        <li>Traffic density</li>
+        <li>Land use patterns</li>
+        <li>Weather conditions</li>
+        <li>Topography</li>
+        <li>Nighttime Lights (NTL) for economic activity</li>
+        <li>Normalized Difference Vegetation Index (NDVI) for vegetation cover</li>
+    </ul>
+    
 
-## Analyzed Factors
+ <h2>Installation</h2>
+    <h3>1. Fork</h3>
+    <pre><code>git clone https://github.com/ashishjha1034/GeoRiskAccess.git</code></pre>
 
-GeoRiskAccess analyzes several factors to assess environmental conditions and risks:
+  <h3>2. Navigate to the project directory</h3>
+    <pre><code>cd GeoRiskAccess</code></pre>
 
-- Population density
-- Locations of fire stations, police stations, and parks
-- Air quality (PM2.5 and other pollutants)
-- Traffic density
-- Land use patterns
-- Weather conditions
-- Topography
-- Nighttime Lights (NTL) for economic activity
-- Normalized Difference Vegetation Index (NDVI) for vegetation cover
+  <h3>3. Install Requirements</h3>
+    <pre><code>pip install -r requirements.txt</code></pre>
 
-  #Clone and run requirement.txt
-  pip install -r requirement.txt
+  <h2>Platform Functionality</h2>
+    <p>Users can:</p>
+    <ul>
+        <li>Select specific locations within Pune (focusing on Katraj area)</li>
+        <li>Access visualizations of environmental data</li>
+        <li>Obtain risk factor assessments based on a trained model</li>
+    </ul>
 
-## Platform Functionality
+   <h2>Project Goals</h2>
+    <ul>
+        <li>Provide valuable insights into urban environmental conditions</li>
+        <li>Facilitate informed decision-making for urban planning and management</li>
+        <li>Contribute to sustainable development and urban resilience</li>
+        <li>Enable effective addressing of pollution and risk factors in urban areas</li>
+    </ul>
 
-Users can:
-
-- Select specific locations within Pune (focusing on Katraj area)
-- Access visualizations of environmental data
-- Obtain risk factor assessments based on a trained model
-
-## Project Goals
-
-- Provide valuable insights into urban environmental conditions
-- Facilitate informed decision-making for urban planning and management
-- Contribute to sustainable development and urban resilience
-- Enable effective addressing of pollution and risk factors in urban areas
-
-## Repository Structure
-
-<pre>
-<code>
+  <h2>Repository Structure</h2>
+    <pre><code>
 ├── .idea
 ├── Lib/site-packages
 ├── Scripts
@@ -75,6 +97,12 @@ Users can:
 ├── practise.xlsm
 ├── practisef.csv
 ├── pyvenv.cfg
-</code>
-</pre>
+    </code></pre>
 
+  <h2>Images</h2>
+    <img src="https://github.com/user-attachments/assets/89e6a131-5cdb-4d07-ab47-e68b24a69506" alt="Screenshot 1">
+    <img src="https://github.com/user-attachments/assets/61a8ecb8-d120-48b6-9d3b-ac62e5c0b113" alt="Screenshot 2">
+    <img src="https://github.com/user-attachments/assets/09f027de-895a-42fd-b383-470dda9a1999" alt="Screenshot 3">
+
+</body>
+</html>
