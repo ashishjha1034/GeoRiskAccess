@@ -191,7 +191,7 @@ def calculate_risk():
     #import google.generativeai as genai
 
     #api_key = 'YOUR_API_KEY_HERE'
-    #genai.configure(api_key='AIzaSyDKLst8XnQhcOxYWYVeiI5KnySRc8IY3YU')
+    #genai.configure(api_key='')
 
     #model = genai.GenerativeModel(model_name="gemini-pro")
     #prompt_parts = ["Tell me about katraj city in 100 words focus on whether it is livable or not?"]
